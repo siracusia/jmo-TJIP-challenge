@@ -1,0 +1,19 @@
+# ──────────────────────────────────────────────────────────────
+# Example variable values
+# Copy to terraform.tfvars and fill in your values.
+# ──────────────────────────────────────────────────────────────
+
+project_name = "threetier"
+environment  = "dev"
+location     = "westeurope"
+
+# AKS
+aks_node_count  = 2
+aks_node_vm_size = "Standard_B2s"
+
+# App Service
+app_service_sku = "B1"
+
+# Database — use a strong password in practice!
+sql_admin_username = "sqladminuser"
+sql_admin_password = "Ch@ngeMe!2026"
